@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { db } from '../../lib/firebase';
 import { collection, getDocs, addDoc, deleteDoc, doc, updateDoc, serverTimestamp } from 'firebase/firestore';
-import { Plus, Edit, Trash2, X, Package as PackageIcon } from 'lucide-react';
+import { Plus, Edit, Trash2, X } from 'lucide-react';
 import toast from 'react-hot-toast';
 import { uploadImageToCloudinary } from '../../lib/cloudinary';
 

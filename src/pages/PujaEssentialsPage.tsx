@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { db } from '../lib/firebase';
 import { collection, getDocs, query, where } from 'firebase/firestore';
 import { useCart } from '../context/CartContext';
-import { ShoppingCart, Package as PackageIcon, Plus, Check } from 'lucide-react';
+import { ShoppingCart, Package as PackageIcon, Plus } from 'lucide-react';
 import { Link } from 'react-router-dom';
 
 interface Product {
