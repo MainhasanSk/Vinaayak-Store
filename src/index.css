@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+}
+
+body {
+  @apply bg-orange-50 text-gray-900 overflow-x-hidden;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  @apply bg-orange-50;
+}
+
+::-webkit-scrollbar-thumb {
+  @apply bg-saffron/50 rounded-full hover:bg-saffron;
+}
+
+/* Premium Design Tokens */
+.glass-card {
+  @apply bg-white/70 backdrop-blur-xl border border-white/40 shadow-xl;
+}
+
+.premium-gradient {
+  @apply bg-gradient-to-br from-saffron via-saffron-dark to-orange-700 text-white;
+}
+
+.mandala-bg {
+  @apply absolute inset-0 opacity-10 pointer-events-none;
+  background-image: url('https://www.transparenttextures.com/patterns/mandala-pattern.png');
+}
+
+@keyframes float {
+
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+.animate-float {
+  animation: float 4s ease-in-out infinite;
+}
