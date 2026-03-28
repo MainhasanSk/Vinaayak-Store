@@ -1,7 +1,9 @@
 import React from 'react';
 import { MessageCircle } from 'lucide-react';
+import { isNativeApp } from '../utils/platform';
 
 const WhatsAppButton: React.FC = () => {
+    if (isNativeApp()) return null;
     const phoneNumber = '918724078378'; // Replace with your WhatsApp business number
     const message = 'Hello! I would like to place an order.';
 

@@ -5,6 +5,5 @@ import { Capacitor } from '@capacitor/core';
  * Returns true if running as a native app, false if running in a regular web browser.
  */
 export const isNativeApp = (): boolean => {
-    const platform = Capacitor.getPlatform();
-    return platform === 'android' || platform === 'ios';
+    return Capacitor.isNativePlatform();
 };
