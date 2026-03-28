@@ -2,7 +2,7 @@ import React from 'react';
 import { Outlet, Link, useLocation } from 'react-router-dom';
 import Navbar from '../Navbar'; // Assuming Navbar is in components root
 import Footer from '../Footer'; // Assuming Footer is in components root
-import { LayoutDashboard, ShoppingBag, Settings, LogOut } from 'lucide-react';
+import { LayoutDashboard, ShoppingBag, LogOut } from 'lucide-react';
 import { useAuth } from '../../context/AuthContext';
 
 const UserLayout: React.FC = () => {
@@ -12,7 +12,6 @@ const UserLayout: React.FC = () => {
     const menuItems = [
         { path: '/dashboard', label: 'Overview', icon: LayoutDashboard },
         { path: '/dashboard/orders', label: 'My Orders', icon: ShoppingBag },
-        { path: '/dashboard/settings', label: 'Settings', icon: Settings },
     ];
 
     return (
