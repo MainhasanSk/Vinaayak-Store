@@ -181,6 +181,14 @@ const Home: React.FC = () => {
                                     <Link to="/services" className="bg-white text-saffron border-2 border-saffron py-3 px-8 rounded-full font-bold hover:bg-orange-50 transition">
                                         Our Services
                                     </Link>
+                                    <a
+                                        href="/app-release.apk"
+                                        download="VinayakStore.apk"
+                                        rel="noopener noreferrer"
+                                        className="bg-orange-100 text-saffron-dark py-3 px-8 rounded-full font-bold hover:bg-orange-200 transition flex items-center gap-2 shadow-sm border border-saffron/20"
+                                    >
+                                        Download App
+                                    </a>
                                 </div>
                             </>
                         )}

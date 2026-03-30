@@ -59,7 +59,8 @@ const AppDownloadSection: React.FC = () => {
                                 <div className="flex flex-wrap gap-4 justify-center lg:justify-start">
                                     <a
                                         href="/app-release.apk"
-                                        download
+                                        download="VinayakStore.apk"
+                                        rel="noopener noreferrer"
                                         className="bg-white text-gray-900 px-10 py-5 rounded-2xl font-bold shadow-xl hover:bg-orange-50 transition-all transform hover:-translate-y-1 flex items-center gap-4 active:scale-95 group border-2 border-transparent hover:border-white/50"
                                     >
                                         <div className="bg-saffron text-white p-2 rounded-xl group-hover:rotate-12 transition-transform duration-300 shadow-lg">

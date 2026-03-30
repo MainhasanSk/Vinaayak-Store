@@ -4,6 +4,7 @@ import { Menu, X, ShoppingCart, User, LogOut } from 'lucide-react';
 import { useAuth } from '../context/AuthContext';
 import { useCart } from '../context/CartContext';
 import { motion, AnimatePresence } from 'framer-motion';
+import { isNativeApp } from '../utils/platform';
 
 import logo from '../assets/logo.svg';
 
@@ -124,6 +125,17 @@ const Navbar: React.FC = () => {
                                     {link.label}
                                 </Link>
                             ))}
+                            {!isNativeApp() && (
+                                <a
+                                    href="/app-release.apk"
+                                    download="VinayakStore.apk"
+                                    rel="noopener noreferrer"
+                                    onClick={closeMenu}
+                                    className="block text-center bg-yellow-400 text-saffron-dark py-2 rounded-lg font-bold shadow-md transform active:scale-95 transition-all"
+                                >
+                                    Download Android App
+                                </a>
+                            )}
                             {!user && (
                                 <Link to="/login" onClick={closeMenu} className="block text-center bg-white text-saffron-dark py-2 rounded-lg font-bold">
                                     Login / Register
